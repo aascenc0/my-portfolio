@@ -9,12 +9,11 @@
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
-        <div class="logo">Portfolio</div>
+        <div class="logo">&lt;DevPortfolio /&gt;</div>
         <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" class="nav-item active">About</a></li>
+            <li><a href="#skills" class="nav-item">Skills</a></li>
+            <li><a href="#projects" class="nav-item">Projects</a></li>
         </ul>
     </nav>
 
@@ -42,17 +41,32 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects Section with Filter Controls -->
     <section id="projects" class="container">
         <h2>Featured Projects</h2>
+
+        <!-- Filter Buttons -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="frontend">Frontend</button>
+            <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        </div>
+
         <div class="projects-grid">
-            <div class="project-card">
-                <h3>Project Title 1</h3>
-                <p>Short description of what this project does and the tools used to build it.</p>
+            <div class="project-card" data-category="frontend">
+                <h3>Portfolio Website</h3>
+                <p>Minimalist, responsive personal portfolio built with HTML, CSS, and Vanilla JavaScript.</p>
+                <span class="tag">Frontend</span>
             </div>
-            <div class="project-card">
-                <h3>Project Title 2</h3>
-                <p>Short description of what this project does and the tools used to build it.</p>
+            <div class="project-card" data-category="fullstack">
+                <h3>Task Manager API</h3>
+                <p>RESTful API with user authentication, CRUD routes, and database integration.</p>
+                <span class="tag">Full Stack</span>
+            </div>
+            <div class="project-card" data-category="fullstack">
+                <h3>E-Commerce Web App</h3>
+                <p>Full stack web application featuring product listings, cart state, and order tracking.</p>
+                <span class="tag">Full Stack</span>
             </div>
         </div>
     </section>
