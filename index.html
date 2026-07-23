@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Hi, I'm a Web Developer</h1>
+        <p>Full Stack Web Development & Software Engineering</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>Welcome! I build full stack web applications with a focus on clean code, strong performance, and modern design.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">HTML5 & CSS3</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Git & GitHub</div>
+            <div class="skill-card">Node.js / Express</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Project Title 1</h3>
+                <p>Short description of what this project does and the tools used to build it.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project Title 2</h3>
+                <p>Short description of what this project does and the tools used to build it.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
