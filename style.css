@@ -277,3 +277,18 @@ section p {
 .api-input.hidden {
     display: none;
 }
+
+/* Interactive Card Tag Link */
+.tag-link {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.tag-link .tag {
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.tag-link:hover .tag {
+    color: var(--accent-hover);
+}
