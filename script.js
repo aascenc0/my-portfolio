@@ -57,8 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // In-memory data store
     let mockUsers = [
-        { id: 1, name: "Jordan Lee", role: "Backend Developer", status: "Active" },
-        { id: 2, name: "Sam Chen", role: "Systems Architect", status: "Active" }
+        { id: 1, name: "Bruce Lee", role: "Backend Developer", status: "Active" },
+        { id: 2, name: "Rocky Balboa", role: "Systems Architect", status: "Active" }
     ];
 
     // Toggle payload visibility based on HTTP Method
