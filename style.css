@@ -241,3 +241,39 @@ section p {
     color: var(--text-primary);
     word-break: break-all;
 }
+
+/* Offline API Sandbox Styles */
+.method-select {
+    background-color: var(--bg-primary);
+    color: var(--accent);
+    border: 1px solid var(--border);
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-family: monospace;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.api-controls {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.api-input {
+    width: 100%;
+    background-color: #090d16;
+    color: #f8fafc;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+    resize: none;
+}
+
+.api-input.hidden {
+    display: none;
+}

@@ -71,6 +71,43 @@
         </div>
     </section>
 
+    <section id="backend-demo" class="container">
+    <h2>Full Stack Capabilities (Offline Sandbox)</h2>
+    <p>Test real CRUD operations executed entirely client-side using an in-memory database engine.</p>
+
+    <div class="project-card fullstack-showcase">
+        <div class="project-header">
+            <h3>In-Memory REST API Engine</h3>
+            <span class="tag">Vanilla JS + LocalStorage / State</span>
+        </div>
+
+        <p class="demo-desc">Select an HTTP method and execute a request against the local data controller:</p>
+
+        <!-- API Tester UI -->
+        <div class="api-tester">
+            <div class="api-controls">
+                <select id="api-method" class="method-select">
+                    <option value="GET">GET /api/v1/users</option>
+                    <option value="POST">POST /api/v1/users</option>
+                    <option value="DELETE">DELETE /api/v1/users/1</option>
+                </select>
+                <button id="run-api-btn" class="api-btn">Execute Request</button>
+            </div>
+
+            <!-- Payload Input (hidden for GET/DELETE) -->
+            <textarea id="api-payload" class="api-input hidden" rows="3">
+{
+  "name": "Alex Rivera",
+  "role": "Full Stack Engineer"
+}
+            </textarea>
+
+            <!-- Json Response Output -->
+            <pre class="api-response"><code id="json-output">// Click "Execute Request" to test the controller logic...</code></pre>
+        </div>
+    </div>
+</section>
+
     <!-- Contact Section -->
     <section id="contact" class="container">
         <h2>Get In Touch</h2>
